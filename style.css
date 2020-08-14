@@ -444,7 +444,7 @@ blockquote::before
 
 blockquote::after
 {
-   content: open-quote; 
+   content: close-quote; 
    font-size: 50px;
    color: #007bff;
    line-height: 10px;
