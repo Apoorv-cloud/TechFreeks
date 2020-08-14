@@ -507,13 +507,21 @@ blockquote::after
     padding: 12px;
 }
 
-.fa-heart-o
+.fa-heart
 {
     margin: 3px;
     color: red;
 }
 
-
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
 
 
 
