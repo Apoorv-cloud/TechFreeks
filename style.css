@@ -429,7 +429,6 @@ blockquote
 {
    font-size: 16px;
    line-height: 30px;
-   quotes: "\201C""\201D""\2018""\2019";
 }
 
 blockquote::before
@@ -443,19 +442,15 @@ blockquote::before
    right: 5px;
 }
 
-/*blockquote::after
+blockquote::after
 {
-   content: '\94'; 
+   content: open-quote; 
    font-size: 50px;
    color: #007bff;
    line-height: 10px;
    position: relative;
    bottom: -15px;
    left: 5px;
-}*/
-
-blockquote p {
-  display: inline;
 }
 
 .profile:hover
