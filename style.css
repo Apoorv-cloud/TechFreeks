@@ -429,11 +429,12 @@ blockquote
 {
    font-size: 16px;
    line-height: 30px;
+   quotes: "\201C""\201D""\2018""\2019";
 }
 
 blockquote::before
 {
-   content: '\93'; 
+   content: open-quote; 
    font-size: 50px;
    color: #007bff;
    line-height: 20px;
@@ -442,7 +443,7 @@ blockquote::before
    right: 5px;
 }
 
-blockquote::after
+/*blockquote::after
 {
    content: '\94'; 
    font-size: 50px;
@@ -451,6 +452,10 @@ blockquote::after
    position: relative;
    bottom: -15px;
    left: 5px;
+}*/
+
+blockquote p {
+  display: inline;
 }
 
 .profile:hover
@@ -512,19 +517,6 @@ blockquote::after
     margin: 3px;
     color: red;
 }
-
-q {
-  quotes: "“" "”" "‘" "’";
-}
-q::before {
-    content: open-quote;
-}
-q::after {
-    content: close-quote;
-}
-
-
-
 
 
 
